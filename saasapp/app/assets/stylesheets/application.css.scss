@@ -15,6 +15,7 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+//Background Gradient
 .navbar, .home-page{
   //Gradient Credit: A little thing by @_ighosh
 background: #136a8a; /* fallback for old browsers */
@@ -22,29 +23,23 @@ background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25
 background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
               
 }
+//Typography Styles
  h1,h2,h3{
   font-family: 'Open Sans', sans-serif;
  }
  .navbar{
    border: none;
 }
-.navbar-default .navbar-brand{
-  
-  color:white;
+// Navbary Styles
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
-
-.navbar-right li a{
-  
-  color:white !important;
-}
-.navbar-default .navbar-brand:hover{
-  color:white;
-  opacity:0.75;
-}
-.navbar-right li a:hover{
-  color:white !important;
-  opacity:0.75;
-}
+//Homepage Styles
 .home-page{
   margin-top: -20px;
   padding-top: 50px;
